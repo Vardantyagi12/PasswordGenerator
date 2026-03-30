@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useEffect } from 'react'
 import './App.css'
 
 function App() {
@@ -22,6 +22,15 @@ function App() {
     setPassword(pass)
 
   }, [length, numberallow, charallow])
+
+  //useEffect
+
+  useEffect( () => {
+
+    passGenerator()
+
+  },[length, numberallow, charallow, passGenerator])
+
   return (
     <>
       <h1 className='text-white flex flex-wrap justify-center text-[40px]'>Password generator</h1>
@@ -36,16 +45,16 @@ function App() {
 
         <div className='flex items-center gap-x-3'>
 
-          <input type="range" min={8} max={100} className='cursor-pointer' onChange={ (e) => {setLength(e.target.value)} }/><label htmlFor="length input" className='text-white'>Length: {length}</label>
+          <input type="range" min={8} max={25} className='cursor-pointer' onChange={ (e) => {setLength(e.target.value)} }/><label htmlFor="length input" className='text-white'>Length: {length}</label>
 
         </div>
 
         <div className='flex item-center gap-x-3'>
-          <input  type="checkbox"/>
+          <input  type="checkbox" onChange={ () => { setCharallow((prev) => !prev)} }/>
           <label htmlFor="characterInput" className='text-white text-lg'>Characters</label>
         </div>
         <div className='flex item-center gap-x-3'>
-           <input  type="checkbox"/>
+           <input  type="checkbox" onChange={ () => {setNumberallow((prev) => !prev )} }/>
           <label htmlFor="characterInput" className='text-white text-lg'>Number </label>
         </div>
       </div>
