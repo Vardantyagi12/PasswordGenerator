@@ -4,12 +4,12 @@
 A powerful and easy-to-use Password Generator tool designed to create strong, secure, and customizable passwords. This project provides users with the ability to generate random passwords based on their specific security requirements.
 
 ## Features
-- ✅ **Customizable Password Length**: Generate passwords of any desired length
-- ✅ **Character Set Options**: Include/exclude uppercase letters, lowercase letters, numbers, and special characters
-- ✅ **Secure Random Generation**: Uses cryptographically secure methods for password generation
-- ✅ **User-Friendly Interface**: Simple and intuitive command-line interface
-- ✅ **Multiple Password Generation**: Generate multiple passwords at once
-- ✅ **Copy to Clipboard**: Easy one-click copying of generated passwords
+-  **Customizable Password Length**: Generate passwords of any desired length
+-  **Character Set Options**: Include/exclude uppercase letters, lowercase letters, numbers, and special characters
+-  **Secure Random Generation**: Uses cryptographically secure methods for password generation
+-  **User-Friendly Interface**: Simple and intuitive command-line interface
+-  **Multiple Password Generation**: Generate multiple passwords at once
+-  **Copy to Clipboard**: Easy one-click copying of generated passwords
 
 ## Getting Started
 
@@ -40,17 +40,6 @@ Follow the interactive prompts to:
 - Generate one or multiple passwords
 - Copy passwords to your clipboard
 
-### Example
-```bash
-$ python password_generator.py
-Enter desired password length (default: 12): 16
-Include uppercase letters? (y/n): y
-Include lowercase letters? (y/n): y
-Include numbers? (y/n): y
-Include special characters? (y/n): y
-
-Generated Password: 7k#Qm9$Lp2@Rx4Nt
-```
 
 ## Security Features
 - Random generation using secure methods
@@ -64,10 +53,6 @@ Contributions are welcome! Feel free to:
 - Suggest new features
 - Submit pull requests
 
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Support
 If you encounter any issues or have questions, please open an issue on the GitHub repository.
 
 ---
